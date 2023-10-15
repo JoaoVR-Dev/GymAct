@@ -1,17 +1,17 @@
 package com.example.GymAct.Models;
 
 public enum UserType {
-    STUDENT("Student"),
-    TEACHER("Teacher"),
-    ADMIN("Admin");
+    STUDENT("student"),
+    TEACHER("teacher"),
+    ADMIN("admin");
 
-    private String userType;
+    private String role;
 
     UserType(String userType){
-        this.userType = userType;
+        this.role = userType;
     }
 
     public String getUserType(){
-        return userType;
+        return role;
     }
 }
